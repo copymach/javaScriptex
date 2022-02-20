@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>퍼센트 계산기</title>
+</head>
+<body leftMargin=5>
+
+	<FORM name="form1">
+		<TABLE cellPadding=5 border=1>
+			<TBODY>
+				<TR bgColor=lightblue>
+					<TD align=middle colSpan=3><B><FONT size=4>퍼센트 계산기</FONT></B></TD>
+					<TR>
+					<TD><INPUT size=5 name=b>의 <INPUT size=5 name=a> % 는 얼마입니까</TD>
+    <TD>결과 : <INPUT maxLength=40 size=5 name=total1></TD>
+    <TD><INPUT onclick=perc1() type=button value=계산></TD>
+  
+				<TR>
+    <TD><INPUT size=5 name=c>은 <INPUT size=5 name=d>의 몇퍼센트 입니까?</TD>
+    <TD>결과 : <INPUT size=5 name=total2> %</TD>
+    <TD><INPUT onclick=perc2() type=button value=계산></TD>
+  
+				<TR>
+    <TD align=middle colSpan=3><INPUT type=reset value=" 다시 계산 "></TD>
+				</TR>
+				
+			</TBODY>
+		</TABLE>
+
+
+</body>
+
+<script type="text/javascript">
+/* 	function perc1() {
+		a = document.form1.a.value / 100;
+		b = a * document.form1.b.value;
+		document.form1.total1.value = b
+	}
+	function perc2() {
+		a = document.form1.c.value;
+		b = document.form1.d.value;
+		c = a / b;
+		d = c * 100;
+		document.form1.total2.value = d
+	} */
+</script>
+
+</html>
