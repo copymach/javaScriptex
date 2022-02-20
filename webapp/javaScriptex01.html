@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<STYLE>
+BODY {
+	FONT-SIZE: 12px
+}
+
+TD {
+	FONT-SIZE: 12px
+}
+</STYLE>
+
+<title>이자계산기</title>
+</head>
+<body leftMargin="20" onload="frm.pr.focus()">
+
+
+	<FORM name="frm" onreset="frm.pr.focus()" method="get">
+		<H3 align="center">
+			<FONT color="#009900">이자 계산기</FONT>
+		</H3>
+		<TABLE width="" align="left" bgColor=#eeeeee>
+			<TBODY>
+				<TR>
+					<TD align=right>원금</TD>
+					<TD><INPUT maxLength=10 onchange=calcAmt(this.form) size=10 name=pr></TD>
+					<TD align=middle bgColor=lightyellow rowSpan=4><FONT size=1>개월수<BR>1 = .08<BR>2 = .17<BR>3 = .25<BR>4 = .33<BR>5 = .42<BR>6 = .50<BR>7 = .58<BR>8 = .67<BR>9 = .75<BR>10 = .83<BR>11 = .92
+					</FONT></TD>
+				</TR>
+				<TR>
+					<TD align=right>이율</TD>
+					<TD><INPUT maxLength=6 onchange="calcAmt(this.form); checkRate(this.form)" size=5 name=rt></TD>
+				</TR>
+				<TR>
+					<TD align=right>년수</TD>
+					<TD><INPUT maxLength=6 onchange="calcAmt(this.form); checkTerm(this.form)" size=5 name=yr></TD>
+				</TR>
+				<TR>
+					<TD align=right>총액</TD>
+					<TD><INPUT style="BACKGROUND-COLOR: yellow" size=10 name=amt></TD>
+				</TR>
+				<TR>
+					<TD align=right>이자</TD>
+					<TD><INPUT style="BACKGROUND-COLOR: yellow" size=10 name=intr></TD>
+					<TD></TD>
+				</TR>
+				<TR>
+					<TD><INPUT onclick=calcAmt(this.form) type=button size=10 value=" 계산하기 " name=calc></TD>
+					<TD></TD>
+					<TD><INPUT type=reset value=" 다시 " name=clear></TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+	</FORM>
+
+
+
+</body>
+
+<script type="text/javascript">
+	/* var princ;
+	 var ratepc;
+	 var years;
+
+	 function calcAmt(frm) {
+	 princ = frm.pr.value;
+	 ratepc = frm.rt.value;
+	 years = frm.yr.value;
+	 frm.amt.value = Math.round(princ*(Math.pow((1+ratepc/100),years))*100)/100;
+	 frm.intr.value = Math.round((princ*(Math.pow((1+ratepc/100),years))-princ)*100)/100
+	 }
+
+	 function checkRate(frm) {
+	 if (ratepc == 0 || ratepc > 30){
+	 window.alert("이자율 " + ratepc +"% 가 맞습니까?")
+	 }
+	 }
+
+	 function checkTerm(frm) {
+	 if (years == 0 || years > 30){
+	 window.alert("기간이 " + years + " 년 맞습니까?")
+	 }
+	 } */
+</script>
+
+</html>
