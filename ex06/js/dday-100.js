@@ -19,3 +19,4 @@ year = someday.getFullYear( );  // ‘연도’를 가져와 year 변수에 저�
 month = someday.getMonth( );  // '월'을 가져와 month 변수에 저장합니다.
 date = someday.getDate( );  // '일'을 가져와 date 변수에 저장합니다.
 document.querySelector("#date200").innerText = year + "년 " + month + "월 " + date + "일";
+
